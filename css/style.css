@@ -2,7 +2,7 @@
 
 main {
   font-family: 'Inter', sans-serif;
-  color: #28352f;
+  color: #172b4d;
 }
 
 nav ul {
@@ -37,10 +37,6 @@ article {
 
 article h2 {
   font-size: 48px;
-}
-
-.blue-black {
-  color: #414447;
 }
 
 .light-green {
