@@ -29,6 +29,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 article {
@@ -126,5 +127,13 @@ article h1 {
     font-weight: 700;
     line-height: 52px;
     padding: 0;
+  }
+
+  section button {
+    border: 1px solid #dfe1e6;
+    border-radius: 50%;
+    display: flex;
+    background: #fff;
+    padding: 10px;
   }
 }
