@@ -5,7 +5,7 @@
 
 > This project is to built personal portfolio website. It contains personal resume, project portfolio and contact information in this website there is social media references for to contact me like LinkedIn, Github and twitter. 
 
-![screenshot](app-screenshot.png)
+![screenshot](app-screenshot-mobile.png)
 
 Additional description about the project and its features.
 
