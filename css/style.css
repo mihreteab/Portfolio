@@ -83,11 +83,6 @@ article h2 {
     display: flex;
   }
 
-  header {
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-
   section {
     background: url("../images/header-illsutration-mobile.svg");
     background-position: center;
@@ -107,14 +102,20 @@ article h2 {
     padding: 50px 40px;
   }
 
-  header h1 {
-    font-size: 25px;
-    font-weight: 500;
-  }
-
   article p {
     font-size: 17px;
     font-weight: 400;
     padding-top: 20px;
+  }
+
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .mobile-header h1 {
+    font-size: 22px;
+    font-weight: 500;
   }
 }
