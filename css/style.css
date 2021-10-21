@@ -106,7 +106,7 @@ article h1 {
   article p {
     font-size: 17px;
     font-weight: 400;
-    padding-top: 20px;
+    padding: 20px 0;
     line-height: 28px;
   }
 
