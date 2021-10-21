@@ -17,7 +17,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://mihreteab.github.io/Hello-World/)
+[Live Demo Link](https://mihreteab.github.io/Portfolio/)
 
 
 ## Getting Started
