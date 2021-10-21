@@ -20,7 +20,7 @@ li {
   padding: 20px;
 }
 
-section {
+.headline {
   background: url("../images/Header-llustration-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,7 +85,7 @@ article h1 {
     display: flex;
   }
 
-  section {
+  .headline {
     background: url("../images/header-illsutration-mobile.svg");
     background-position: center;
     background-size: cover;
@@ -129,7 +129,7 @@ article h1 {
     padding: 0;
   }
 
-  section button {
+  .headline button {
     border: 1px solid #dfe1e6;
     border-radius: 50%;
     display: flex;
