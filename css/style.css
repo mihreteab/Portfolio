@@ -75,7 +75,8 @@ li {
   padding: 10px;
 }
 
-main .works h1 {
+main .works h1,
+.about .about-me-description h1 {
   text-align: center;
   font-size: 48px;
   line-height: 52px;
@@ -107,7 +108,8 @@ main .works h1 {
   padding: 5px;
 }
 
-.works .project button {
+.works .project button,
+.about .about-me-description button {
   height: 48px;
   background: #36b37e;
   color: #fff;
@@ -146,6 +148,10 @@ main .works h1 {
   margin: 10px;
 }
 
+.about-me-description {
+  text-align: center;
+}
+
 /* for mobile screen */
 @media only screen and (max-device-width: 480px) {
   .only-desktop {
@@ -175,7 +181,8 @@ main .works h1 {
     padding: 20px 40px;
   }
 
-  .headline article p {
+  .headline article p,
+  .about .about-me-description p {
     font-size: 17px;
     font-weight: 400;
     padding: 20px 0;
@@ -231,5 +238,9 @@ main .works h1 {
 
   .project {
     width: 90vw;
+  }
+
+  .about .about-me-description p {
+    padding-top: 0;
   }
 }
