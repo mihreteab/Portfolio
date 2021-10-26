@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 main {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #172b4d;
 }
 
@@ -147,7 +147,7 @@ main .works h1,
 .project .desctiption h4,
 .about .skills-container .skills-description h4 {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 24px;
   line-height: 32px;
   color: #3a4a42;
@@ -204,7 +204,7 @@ main .works h1,
 }
 
 /* for mobile screen */
-@media only screen and (max-device-width: 480px) {
+@media screen and (max-width: 600px) {
   .only-desktop {
     display: none;
   }
