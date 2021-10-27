@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+:root {
+  --font-family: "Inter", sans-serif;
+  --color-primary: #36b37f;
+  --color-primary-darker: #008552;
+  --color-blue: #1e488f;
+  --color-blue-darker: #0a2759;
+  --color-red: #ff6163;
+  --color-red-darker: #dd5153;
+  --color-white: #fff;
+}
+
+html {
+  font-family: var(--font-family);
+}
+
 main {
   font-family: "Inter", sans-serif;
   color: #172b4d;
@@ -303,6 +318,12 @@ main .works h1,
     text-align: center;
   }
 
+  .contact-container {
+    background-image: url(../images/illustration-contact-form.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom 180px;
+  }
+
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -314,6 +335,7 @@ main .works h1,
     border: 1px solid #d0d9d4;
     border-radius: 4px;
     padding: 16px 15px;
+    background-color: transparent;
   }
 
   .contact-form textarea {
@@ -336,6 +358,7 @@ main .works h1,
     margin-bottom: 0;
   }
 }
+
 .btn:enabled {
   background: #36b37e;
   color: #fff;
