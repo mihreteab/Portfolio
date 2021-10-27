@@ -360,22 +360,27 @@ main .works h1,
 }
 
 .btn:enabled {
-  background: #36b37e;
-  color: #fff;
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 
 .btn:hover {
-  background: #fff;
-  color: #36b37e;
-  border: 1px solid #36b37e;
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .btn:active {
-  background: #09804e;
-  color: #fff;
+  background: var(--color-primary-darker);
+  color: var(--color-white);
 }
 
 .btn:disabled {
   color: #3a4a42;
   background: #ebf0ee;
+}
+
+.btn-form-submit {
+  /* width: 129px; */
+  align-self: center;
 }
