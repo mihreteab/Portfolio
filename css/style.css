@@ -113,8 +113,7 @@ main .works h1,
   padding: 5px;
 }
 
-.works .project button,
-.about .about-me-description button {
+.btn-primary {
   height: 48px;
   background: #36b37e;
   color: #fff;
@@ -125,7 +124,8 @@ main .works h1,
   padding: 12px;
 }
 
-.works .project ul li button {
+.btn-secondary {
+  border: none;
   background: #ebf0ee;
   color: #3a4a42;
   border-radius: 4px;
@@ -188,7 +188,7 @@ main .works h1,
   padding: 8px;
 }
 
-.skills .skills-description ul li button {
+.btn-disabled {
   background: #fff;
   color: #36b37e;
   border: none;
@@ -258,7 +258,7 @@ main .works h1,
     padding: 0;
   }
 
-  .headline button {
+  .headline-btn {
     border: 1px solid #dfe1e6;
     border-radius: 50%;
     display: flex;
@@ -323,19 +323,6 @@ main .works h1,
     border: 1px solid #60c095;
   }
 
-  .contact-form button {
-    width: 129px;
-    height: 48px;
-    background: #36b37f;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    font-size: 17px;
-    line-height: 24px;
-    align-self: center;
-  }
-
   .contact .email-address {
     text-align: center;
     font-family: "Inter", sans-serif;
@@ -348,4 +335,24 @@ main .works h1,
     padding: 0;
     margin-bottom: 0;
   }
+}
+.btn:enabled {
+  background: #36b37e;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #36b37e;
+  border: 1px solid #36b37e;
+}
+
+.btn:active {
+  background: #09804e;
+  color: #fff;
+}
+
+.btn:disabled {
+  color: #3a4a42;
+  background: #ebf0ee;
 }
