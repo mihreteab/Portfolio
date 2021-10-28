@@ -78,6 +78,7 @@ li {
   display: flex;
   list-style: none;
   justify-content: center;
+  padding: 0;
 }
 
 .social-medias ul li {
@@ -85,6 +86,14 @@ li {
 }
 
 .works {
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-container {
   display: grid;
   gap: 24px;
   justify-items: center;
@@ -317,8 +326,9 @@ textarea {
   border: 1px solid #60c095;
 }
 
-.contact .email-address {
+.email-address {
   text-align: center;
+  justify-content: center;
   font-family: "Inter", sans-serif;
   margin-top: 0;
   height: 189px;
@@ -385,5 +395,29 @@ textarea {
   .headline article h1 {
     font-size: 48px;
     line-height: 52px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .project {
+    width: 369px;
+  }
+
+  .about-me-description {
+    padding: 0 15vw;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills {
+    width: 369px;
   }
 }
