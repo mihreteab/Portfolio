@@ -379,6 +379,7 @@ textarea {
 
   .headline article {
     width: 60vw;
+    margin-top: -20vh;
   }
 
   .headline article h1 {
