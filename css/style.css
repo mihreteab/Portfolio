@@ -11,6 +11,14 @@
   --color-white: #fff;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: var(--font-family);
 }
@@ -130,6 +138,7 @@ main .works h1,
   flex-direction: column;
   border-radius: 8px;
   width: 90vw;
+  overflow: hidden;
 }
 
 .image-container img {
@@ -483,5 +492,14 @@ textarea {
     position: absolute;
     padding-top: 450px;
     margin-left: -200px;
+  }
+
+  .project img {
+    margin: 0;
+    transition: margin 1s;
+  }
+
+  .project img:hover {
+    margin: -20px;
   }
 }
