@@ -400,11 +400,24 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .headline article {
     width: 60vw;
     margin-top: -20vh;
+    animation-name: bottomToTop;
+    animation-duration: 2s;
+  }
+
+  @keyframes bottomToTop {
+    from {
+      transform: translateY(-1000px);
+    }
+
+    to {
+      transform: translateY(0);
+    }
   }
 
   .headline article h1 {
