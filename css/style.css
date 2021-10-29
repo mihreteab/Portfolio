@@ -375,6 +375,11 @@ textarea {
     display: block;
   }
 
+  nav {
+    top: 0;
+    background: #fff;
+  }
+
   .headline {
     background: url("../images/Header-llustration-desktop.svg");
     background-repeat: no-repeat;
@@ -414,10 +419,68 @@ textarea {
 
   .skills-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   .skills {
     width: 369px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 320px 0;
+  }
+
+  .contact h2 {
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .contact form {
+    width: 50%;
+  }
+
+  .contact .text-container {
+    width: 30%;
+    padding: 0 10px;
+  }
+
+  .footer {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .top-left-background {
+    position: absolute;
+    left: 0;
+    width: 150px;
+    padding-top: 100px;
+  }
+
+  .top-right-background {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    margin-top: -30px;
+  }
+
+  .bottom-left-background {
+    position: absolute;
+    left: 0;
+    padding-top: 300px;
+  }
+
+  .bottom-right-background {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    padding-top: 300px;
+  }
+
+  .bottom-center-background {
+    position: absolute;
+    padding-top: 450px;
+    margin-left: -200px;
   }
 }
