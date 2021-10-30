@@ -102,23 +102,30 @@ li {
   align-items: center;
 }
 
-.headline article h1 {
+.contact h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.headline article h2 {
   font-size: 35px;
 }
 
-header .mobile-header h1 {
+header .mobile-header h2 {
   font-size: 22px;
   font-weight: 500;
 }
 
-main .works h1 {
+main .works h2 {
   text-align: center;
   font-size: 38px;
   line-height: 52px;
 }
 
-main .works h1,
-.about .about-me-description h1 {
+main .works h2,
+.about .about-me-description h2 {
   text-align: center;
   font-size: 48px;
   line-height: 52px;
@@ -293,13 +300,6 @@ main .works h1,
   padding-top: 0;
 }
 
-.contact h2 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  text-align: center;
-}
-
 .contact-container {
   background-image: url(../images/illustration-contact-form.svg);
   background-repeat: no-repeat;
@@ -398,7 +398,12 @@ textarea {
     margin-top: -20vh;
   }
 
-  .headline article h1 {
+  .contact h2 {
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .headline article h2 {
     font-size: 48px;
     line-height: 52px;
   }
@@ -434,11 +439,6 @@ textarea {
     padding: 100px 0 320px 0;
   }
 
-  .contact h2 {
-    font-size: 30px;
-    line-height: 52px;
-  }
-
   .contact form {
     width: 50%;
   }
@@ -455,21 +455,34 @@ textarea {
   .top-left-background {
     position: absolute;
     left: 0;
-    width: 150px;
+    width: 200px;
+    height: 200px;
     padding-top: 100px;
+    background: url('../images/top-left.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .top-right-background {
     position: absolute;
     right: 0;
-    width: 150px;
+    width: 200px;
+    height: 200px;
     margin-top: -30px;
+    background: url('../images/top-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .bottom-left-background {
     position: absolute;
+    width: 200px;
     left: 0;
     padding-top: 300px;
+    margin-top: 300px;
+    background: url('../images/illustration-1-contact-form-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .bottom-right-background {
@@ -477,11 +490,20 @@ textarea {
     right: 0;
     width: 150px;
     padding-top: 300px;
+    margin-top: 300px;
+    background: url('../images/illustration-contact-form.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .bottom-center-background {
     position: absolute;
     padding-top: 450px;
+    margin-top: 450px;
     margin-left: -200px;
+    width: 200px;
+    background: url('../images/illustration-2-contact-form-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 }
