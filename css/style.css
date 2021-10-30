@@ -367,7 +367,7 @@ textarea {
   align-self: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 992px) {
   .only-mobile {
     display: none;
   }
