@@ -11,6 +11,14 @@
   --color-white: #fff;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: var(--font-family);
 }
@@ -137,6 +145,7 @@ main .works h2,
   flex-direction: column;
   border-radius: 8px;
   width: 90vw;
+  overflow: hidden;
 }
 
 .image-container img {
@@ -391,11 +400,24 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
   }
 
   .headline article {
     width: 60vw;
     margin-top: -20vh;
+    animation-name: bottomToTop;
+    animation-duration: 2s;
+  }
+
+  @keyframes bottomToTop {
+    from {
+      transform: translateY(-1000px);
+    }
+
+    to {
+      transform: translateY(0);
+    }
   }
 
   .contact h2 {
@@ -505,5 +527,14 @@ textarea {
     background: url('../images/illustration-2-contact-form-desktop.svg');
     background-size: contain;
     background-repeat: no-repeat;
+  }
+
+  .project img {
+    margin: 0;
+    transition: margin 1s;
+  }
+
+  .project img:hover {
+    margin: -20px;
   }
 }
