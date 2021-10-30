@@ -18,6 +18,7 @@ html {
 main {
   font-family: "Inter", sans-serif;
   color: #172b4d;
+  padding: 10px;
 }
 
 nav ul {
@@ -36,11 +37,12 @@ li {
 }
 
 .headline {
-  background: url("../images/Header-llustration-desktop.svg");
-  background-repeat: no-repeat;
+  background: url("../images/header-illsutration-mobile.svg");
+  background-position: center;
   background-size: cover;
+  height: auto;
+  background-repeat: no-repeat;
   text-align: center;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,19 +51,11 @@ li {
 
 .headline article {
   text-align: center;
-}
-
-.headline article h1 {
-  font-size: 48px;
-  line-height: 52px;
+  padding: 20px 40px;
 }
 
 .light-green {
   color: #36b37e;
-}
-
-.only-mobile {
-  display: none;
 }
 
 .display-flex {
@@ -84,6 +78,8 @@ li {
   display: flex;
   list-style: none;
   justify-content: center;
+  padding: 0;
+  align-items: center;
 }
 
 .social-medias ul li {
@@ -94,10 +90,42 @@ li {
   display: grid;
   gap: 24px;
   justify-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-main .works h1,
-.about .about-me-description h1 {
+.project-container {
+  display: grid;
+  gap: 24px;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+}
+
+.headline article h2 {
+  font-size: 35px;
+}
+
+header .mobile-header h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+main .works h2 {
+  text-align: center;
+  font-size: 38px;
+  line-height: 52px;
+}
+
+main .works h2,
+.about .about-me-description h2 {
   text-align: center;
   font-size: 48px;
   line-height: 52px;
@@ -108,6 +136,7 @@ main .works h1,
   border: 1px solid #d0d9d4;
   flex-direction: column;
   border-radius: 8px;
+  width: 90vw;
 }
 
 .image-container img {
@@ -219,144 +248,97 @@ main .works h1,
 }
 
 /* for mobile screen */
-@media screen and (max-width: 600px) {
-  .only-desktop {
-    display: none;
-  }
 
-  .only-mobile {
-    display: flex;
-  }
+.only-desktop {
+  display: none;
+}
 
-  .headline {
-    background: url("../images/header-illsutration-mobile.svg");
-    background-position: center;
-    background-size: cover;
-    height: auto;
-  }
+.only-mobile {
+  display: flex;
+}
 
-  main {
-    padding: 10px;
-  }
+.headline article p,
+.about .about-me-description p {
+  font-size: 17px;
+  font-weight: 400;
+  padding: 20px 0;
+  line-height: 28px;
+}
 
-  .headline article h1 {
-    font-size: 35px;
-  }
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
 
-  .headline article {
-    padding: 20px 40px;
-  }
+.headline .section-title p {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 52px;
+  padding: 0;
+}
 
-  .headline article p,
-  .about .about-me-description p {
-    font-size: 17px;
-    font-weight: 400;
-    padding: 20px 0;
-    line-height: 28px;
-  }
+.headline-btn {
+  border: 1px solid #dfe1e6;
+  border-radius: 50%;
+  display: flex;
+  background: #fff;
+  padding: 10px;
+}
 
-  .mobile-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
+.indicator {
+  border: 1px solid #36b37e;
+  background: #36b37e;
+  width: 50px;
+  height: 2px;
+  border-radius: 2px;
+  margin-bottom: 62px;
+  margin-top: -30px;
+}
 
-  header .mobile-header h1 {
-    font-size: 22px;
-    font-weight: 500;
-  }
+.about .about-me-description p {
+  padding-top: 0;
+}
 
-  .headline .section-title p {
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 52px;
-    padding: 0;
-  }
+.contact-container {
+  background-image: url(../images/illustration-contact-form.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom 180px;
+}
 
-  .headline-btn {
-    border: 1px solid #dfe1e6;
-    border-radius: 50%;
-    display: flex;
-    background: #fff;
-    padding: 10px;
-  }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-  .works {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.contact-form input,
+textarea {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  padding: 16px 15px;
+  background-color: transparent;
+}
 
-  main .works h1 {
-    text-align: center;
-    font-size: 38px;
-    line-height: 52px;
-  }
+.contact-form textarea {
+  font-family: "Inter", sans-serif;
+  resize: vertical;
+  height: 114px;
+  border: 1px solid #60c095;
+}
 
-  .indicator {
-    border: 1px solid #36b37e;
-    background: #36b37e;
-    width: 50px;
-    height: 2px;
-    border-radius: 2px;
-    margin-bottom: 62px;
-    margin-top: -30px;
-  }
+.email-address {
+  text-align: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  margin-top: 0;
+  height: 189px;
+  margin-bottom: 147px;
+}
 
-  .project {
-    width: 90vw;
-  }
-
-  .about .about-me-description p {
-    padding-top: 0;
-  }
-
-  .contact h2 {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    text-align: center;
-  }
-
-  .contact-container {
-    background-image: url(../images/illustration-contact-form.svg);
-    background-repeat: no-repeat;
-    background-position: right bottom 180px;
-  }
-
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .contact-form input,
-  textarea {
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    padding: 16px 15px;
-    background-color: transparent;
-  }
-
-  .contact-form textarea {
-    font-family: "Inter", sans-serif;
-    resize: vertical;
-    height: 114px;
-    border: 1px solid #60c095;
-  }
-
-  .contact .email-address {
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    margin-top: 0;
-    height: 189px;
-    margin-bottom: 147px;
-  }
-
-  .contact ul {
-    padding: 0;
-    margin-bottom: 0;
-  }
+.contact ul {
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .btn:enabled {
@@ -383,4 +365,145 @@ main .works h1,
 .btn-form-submit {
   /* width: 129px; */
   align-self: center;
+}
+
+@media screen and (min-width: 992px) {
+  .only-mobile {
+    display: none;
+  }
+
+  .only-desktop {
+    display: block;
+  }
+
+  nav {
+    top: 0;
+    background: #fff;
+  }
+
+  .headline {
+    background: url("../images/Header-llustration-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .headline article {
+    width: 60vw;
+    margin-top: -20vh;
+  }
+
+  .contact h2 {
+    font-size: 30px;
+    line-height: 52px;
+  }
+
+  .headline article h2 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .project {
+    width: 369px;
+  }
+
+  .about-me-description {
+    padding: 0 15vw;
+  }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skills {
+    width: 369px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 320px 0;
+  }
+
+  .contact form {
+    width: 50%;
+  }
+
+  .contact .text-container {
+    width: 30%;
+    padding: 0 10px;
+  }
+
+  .footer {
+    border-top: 1px solid #dfe1e6;
+  }
+
+  .top-left-background {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    padding-top: 100px;
+    background: url('../images/top-left.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .top-right-background {
+    position: absolute;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    margin-top: -30px;
+    background: url('../images/top-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-left-background {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    padding-top: 300px;
+    margin-top: 300px;
+    background: url('../images/illustration-1-contact-form-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-right-background {
+    position: absolute;
+    right: 0;
+    width: 150px;
+    padding-top: 300px;
+    margin-top: 300px;
+    background: url('../images/illustration-contact-form.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .bottom-center-background {
+    position: absolute;
+    padding-top: 450px;
+    margin-top: 450px;
+    margin-left: -200px;
+    width: 200px;
+    background: url('../images/illustration-2-contact-form-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
